@@ -4,7 +4,7 @@ public class Deck {
 	// The deck is an array of Cards
 	private static Card[] deck;
 	
-	//array espejo de la baraja que marcará si ya salieron o no.
+	//array espejo de la baraja que marcara si ya salieron o no.
 	public Boolean[] deckBool;
 	
 		
@@ -12,7 +12,7 @@ public class Deck {
 	private int stolen;
 	
 	// Construction Method. Recorremos todos los valores posibles y todos los palos posibles
-	//Iniciaremos la matriz booleana en espejo, todos en true porque están en la baraja. 
+	//Iniciaremos la matriz booleana en espejo, todos en true porque estan en la baraja. 
 	public Deck() {
 		deck = new Card[52];
 		deckBool = new Boolean[52];
@@ -33,7 +33,7 @@ public class Deck {
 		return 52 - stolen;
 	}
 	
-	//Introduce la carta que salió y  la borra del boolDeck
+	//Introduce la carta que salio y  la borra del boolDeck
 	
 	public void remove (Card r){
 		int pos;
